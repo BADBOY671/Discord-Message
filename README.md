@@ -3,8 +3,10 @@
 <hr>
 </hr>
 Discord-Message<br>
-- A lightweight and easy to use,  
-framework for discord bots, uses MongoDB.<br>
+
+# - A lightweight and easy to use,  
+
+# framework for discord bots, uses MongoDB.<br>
 
 # How To Install It In Your Project:?
 
@@ -92,7 +94,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const Message = require('discord-msg')
 const prefix = "+"
-Setup(client, 'MongoDB DataBase Url')
+Message.Setup(client, 'MongoDB DataBase Url')
 client.on('message', async message => {
 if(message.content.startsWith(prefix + "top")){
 if(message.author.bot || !message.guild) return 
@@ -101,7 +103,7 @@ guildID: message.guild.id,
 UsersFetch: 2
 }).then(Leader => {
 
-message.channel.send(new Discord.MessageEmbed().setAuthor(message.author.tag, message.author.avatarURL({dynamic: true})).setDescription(Leader).setTimestamp().setFooter(`Leaderboard For: ${message.guild.name}`).setColor('RANDOM'))
+message.channel.send(new Discord.MessageEmbed().setAuthor(message.author.tag, message.author.avatarURL({dynamic: true})).setDescription(Leader).setTimestamp().setFooter(`Leaderboard For: ${message.guild.name}`).setColor('BLUE'))
 })
 }
 })
@@ -124,7 +126,7 @@ await Message.Fetch({
 userID: u.id,
 guildID: message.guild.id
 }).then(count => {
-message.channel.send(count)
+message.channel.send(`<@${u.id}> Have ${count} Message`)
 }).catch(err => console.log(err))
 
 }
@@ -168,7 +170,10 @@ message.channel.send('done')
 })
 ```
 <br>
-# In The End ✌️ 
-Any Bug Or Suggestion:<br>
+# In The End ✌️ <br>
+
+# Any Bug Or Suggestion:<br>
+
 Discord: #B A D B O Y #1502<br>
-Good Luck With discord-msg
+
+# feel free with discord message ❤️✌️
