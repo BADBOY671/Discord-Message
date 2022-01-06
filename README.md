@@ -1,5 +1,5 @@
 <h1>Hi 👋</h1>
-<h1>Discord-Measage System Using MongoDB</h1>
+<h1>Discord-Measages System Using MongoDB</h1>
 <hr>
 </hr>
 Discord-Message<br>
@@ -12,7 +12,7 @@ framework for discord bots, uses MongoDB.<br>
 </br>
 
 ```cli
-npm i discord-message
+npm i discord-msg
 ```
 <br>
 <br>
@@ -23,7 +23,7 @@ First things first, we include the module into the project.
 </br>
 
 ```js
-const Message = require("discord-message");
+const Message = require("discord-msg");
 ```
 <br>
 Then you need to provide a valid MongoDB database url and client
@@ -90,7 +90,7 @@ UsersFetch,
 ```js
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const Message = require('discord-message')
+const Message = require('discord-msg')
 const prefix = "+"
 Setup(client, 'MongoDB DataBase Url')
 client.on('message', async message => {
@@ -171,4 +171,4 @@ message.channel.send('done')
 # In The End ✌️ 
 Any Bug Or Suggestion:<br>
 Discord: #B A D B O Y #1502<br>
-Good Luck With discord-message
+Good Luck With discord-msg
