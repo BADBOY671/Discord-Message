@@ -49,16 +49,16 @@ Message.Setup(client, 'DataBase Url')
 ```js
 onMessage({
 message,
-guildID: GuildID,
-userID: UserID
+guildID: <Message>.guild.id,
+userID: <Message>.author.id
 })
 ```
 <hr></hr>
 
 ```js
 AddMessage({
-guildID: GuildID,
-userID: UserID,
+guildID: <Message>.guild.id,
+userID: <Message>.author.id,
 Value: Num
 })
 ```
@@ -66,8 +66,8 @@ Value: Num
 
 ```js
 SubtractMessage({
-guildID: GuildID,
-userID: UserID,
+guildID: <Message>.guild.id,
+userID: <Message>.author.id,
 Value: Num
 })
 ```
@@ -75,8 +75,8 @@ Value: Num
 
 ```js
 Fetch({
-guildID: GuildID,
-userID: UserID,
+guildID: <Message>.guild.id,
+userID: <Message>.author.id,
 
 }).then(count => <Measage>.channel.send(count))
 ```
@@ -85,8 +85,8 @@ userID: UserID,
 
 ```js
 Leaderboard({
-guildID: GuildID,
-UsersFetch,
+guildID: <Message>.guild.id,
+UsersFetch: num,
 }).then(Leader => <Measage>.channel.send(Leader))
 ```
 
