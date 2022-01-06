@@ -74,9 +74,12 @@ resolve(final)
     
 })
 }
-module.exports.Setup = Setup;
-module.exports.onMessage = onMessage;
-module.exports.AddMessage = AddMessage;
-module.exports.SubtractMessage = SubtractMessage;
-module.exports.Fetch = Fetch;
-module.exports.Leaderboard = Leaderboard;
+module.exports = {
+Setup,
+onMessage,
+AddMessage,
+SubtractMessage,
+Fetch,
+Leaderboard
+}
+
