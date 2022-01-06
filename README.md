@@ -3,7 +3,8 @@
 <hr>
 </hr>
 Discord-Message
-- A lightweight and easy to use,  framework for discord bots, uses MongoDB.
+- A lightweight and easy to use,  
+framework for discord bots, uses MongoDB.
 
 # How To Install It In Your Project:?
 
