@@ -1,11 +1,10 @@
 <h1>Hi 👋</h1>
-<h1>Discord-Measage</h1>
+<h1>Discord-Measage System Using MongoDB</h1>
 <hr>
 </hr>
 Discord-Message
 - A lightweight and easy to use,  
 framework for discord bots, uses MongoDB.
-
 # How To Install It In Your Project:?
 
 <br>
