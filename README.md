@@ -2,9 +2,10 @@
 <h1>Discord-Measage System Using MongoDB</h1>
 <hr>
 </hr>
-Discord-Message
+Discord-Message<br>
 - A lightweight and easy to use,  
-framework for discord bots, uses MongoDB.
+framework for discord bots, uses MongoDB.<br>
+
 # How To Install It In Your Project:?
 
 <br>
