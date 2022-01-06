@@ -1,5 +1,5 @@
 <h1>Hi 👋</h1>
-<h1>Discord-Measages System Using MongoDB</h1>
+<h1>Discord-Message System Using MongoDB</h1>
 <hr>
 
 # Discord.js support
