@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const Discord = require('discord.js')
 let msg = require('../models/message.js')
+const Discord = require('discord.js')
 const client = new Discord.Client()
   async function Setup(client, url){
     if(!client) return
@@ -9,7 +9,6 @@ const client = new Discord.Client()
       useNewUrlParser: true,
     });
   }
-Setup(process.env.token, process.env.database)
 async function onMessage({userID, guildID, message}){
 let data = await msg.findOne({userID: userID, guildID: guildID})
 if(!data || data == null){
@@ -74,12 +73,28 @@ resolve(final)
     
 })
 }
+
+async function SubtractAllMessage({ guildID}){
+let data = await msg.deleteMany({guildID: guildID})
+if(data.length < 1){
+return 
+
+} else {
+
+console.log(data)
+
+}
+
+}
+
+
+
 module.exports = {
 Setup,
 onMessage,
 AddMessage,
 SubtractMessage,
 Fetch,
-Leaderboard
+Leaderboard,
+SubtractAllMessage
 }
-
